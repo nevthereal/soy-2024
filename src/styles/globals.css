@@ -1,4 +1,0 @@
-.hero {
-  @apply w-screen h-[90dvh] bg-no-repeat bg-center bg-cover text-white flex items-center px-16;
-  background-image: url("../assets/northern-lights.jpeg");
-}

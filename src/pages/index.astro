@@ -4,6 +4,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title='Home'>
   <div class='hero'>
-    <h1 class='text-5xl'>SOY XXVI</h1>
+    <section class='flex flex-col'>
+      <h1 class='text-8xl font-bold'>SOY XXVI</h1>
+      <h3 class='flex gap-3 items-center text-2xl mt-2'>
+        <i class='fa-solid fa-location-dot'></i><span>Levi, Lapland</span>
+      </h3>
+    </section>
+    <main class='grid grid-cols-2'></main>
   </div>
 </BaseLayout>
+
+<style>
+  .hero {
+    @apply w-screen h-[50dvh] bg-no-repeat bg-center bg-cover text-white flex items-center xl:pl-[10%];
+    background-image: url("../assets/hero-bg.jpg");
+  }
+</style>
