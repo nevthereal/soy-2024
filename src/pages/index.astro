@@ -1,22 +1,41 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import herobg from "../assets/hero-bg.jpg";
 ---
 
 <BaseLayout title='Home'>
-  <div class='hero'>
-    <section class='flex flex-col'>
-      <h1 class='text-8xl font-bold'>SOY XXVI</h1>
-      <h3 class='flex gap-3 items-center text-2xl mt-2'>
-        <i class='fa-solid fa-location-dot'></i><span>Levi, Lapland</span>
-      </h3>
-    </section>
-    <main class='grid grid-cols-2'></main>
-  </div>
+  <section class='w-screen grid grid-cols-2 h-[40vw] p-8'>
+    <div class='flex hero text-white'>
+      <div class='my-auto ml-8'>
+        <h1 class='text-8xl font-bold'>SOY XXVI</h1>
+        <h3 class='flex gap-3 items-center text-2xl mt-2'>
+          <i class='fa-solid fa-location-dot'></i><span>Levi, Lapland</span>
+        </h3>
+      </div>
+    </div>
+    <div class='mx-16 my-auto'>
+      <h1 class='text-4xl mb-8'>Irgend en crap text</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam enim
+        molestias qui deserunt culpa amet numquam, facilis blanditiis earum
+        laboriosam consectetur corporis soluta ut eius est voluptate, neque
+        quasi provident voluptates quod! Quia beatae voluptates ea distinctio
+        tenetur explicabo quidem natus rerum eligendi aut ratione quis
+        reprehenderit, inventore incidunt nihil rem, saepe officia debitis
+        sapiente consequatur veritatis eveniet illum delectus iste. Aliquam
+        omnis eum magni nemo, voluptatum tempora quos laborum hic optio dolor,
+        dolores ipsa laboriosam totam aperiam placeat, quas iusto eveniet natus
+        ipsum officia! Accusantium natus provident minus sint ea mollitia, quia,
+        corporis consequatur possimus doloremque, dolores at iure.
+      </p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
   .hero {
-    @apply w-screen h-[50dvh] bg-no-repeat bg-center bg-cover text-white flex items-center xl:pl-[10%];
     background-image: url("../assets/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
   }
 </style>
