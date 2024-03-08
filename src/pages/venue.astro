@@ -1,0 +1,28 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title='Venue'>
+  <main class='mx-8 md:mx-16'>
+    <h1 class='text-3xl mb-8'>Venue/Travel</h1>
+    <div class='grid grid-cols-2'>
+      <div>
+        <h3 class='mb-4 text-2xl'>Location: Levi, Lapland</h3>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d192749.46836926325!2d24.734543!3d67.8257582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d3ada6e521338b%3A0x18e6b1a1ac82f952!2sLevi!5e0!3m2!1sen!2sch!4v1709881998192!5m2!1sen!2sch'
+          width='600'
+          height='450'
+          style='border:0;'
+          allowfullscreen=''
+          loading='lazy'
+          referrerpolicy='no-referrer-when-downgrade'></iframe>
+      </div>
+      <div>
+        <h3 class='mb-4 text-2xl'>Accomodations:</h3>
+        <a href='https://www.levi.fi/en/stay' target='_blank'
+          ><button>Book</button></a
+        >
+      </div>
+    </div>
+  </main>
+</BaseLayout>

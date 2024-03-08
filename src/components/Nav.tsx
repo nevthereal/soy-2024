@@ -10,14 +10,14 @@ export const Nav = () => {
 
   return (
     <>
-      <nav className='py-8 md:flex w-[50vw] h-[10dvh] items-center justify-center mx-auto gap-16 hidden'>
+      <nav className='py-8 md:flex h-[10dvh] items-center justify-center mx-auto gap-16 hidden'>
         <a href='/' className='text-3xl'>
           <img src={logo.src} className='h-[8dvh]' />
         </a>
         <div className='flex gap-8 font-black font-[sofia-pro] uppercase'>
-          <a href='/ohjelma'>OHJELMA</a>
-          <a href='/ilmoittautuminen'>Ilmoittautuminen</a>
-          <a href='/majoitus'>MAJOITUS</a>
+          <a href='/scientific-program'>scientific program</a>
+          <a href='/registration'>registration</a>
+          <a href='/venue'>venue/travel</a>
         </div>
       </nav>
       <div className='flex justify-between p-4 items-center'>
@@ -43,13 +43,13 @@ export const Nav = () => {
           </a>
           <ul className='flex flex-col gap-4'>
             <li>
-              <a href='/ohjelma'>OHJELMA</a>
+              <a href='/scientific-program'>scientific program</a>
             </li>
             <li>
-              <a href='/ilmoittautuminen'>Ilmoittautuminen</a>
+              <a href='/registration'>registration</a>
             </li>
             <li>
-              <a href='/majoitus'>MAJOITUS</a>
+              <a href='/venue'>venue/travel</a>
             </li>
           </ul>
         </nav>
