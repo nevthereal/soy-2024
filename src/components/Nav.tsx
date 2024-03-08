@@ -23,7 +23,7 @@ export const Nav = () => {
       <div className='flex justify-between p-4 items-center'>
         <button
           onClick={handleNav}
-          className='p-4 m-2 top-2 left-2 md:hidden aspect-square text-xl'
+          className='p-4 m-2 top-2 left-2 md:hidden text-xl'
         >
           <i className='fa-solid fa-bars'></i>
         </button>
