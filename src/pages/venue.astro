@@ -5,7 +5,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <BaseLayout title='Venue'>
   <main class='mx-8 md:mx-16'>
     <h1 class='text-3xl mb-8'>Venue/Travel</h1>
-    <div class='grid grid-cols-2'>
+    <div class='grid md:grid-cols-2 gap-8 md:gap-0'>
       <div>
         <h3 class='mb-4 text-2xl'>Location: Levi, Lapland</h3>
         <iframe
@@ -14,10 +14,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           allowfullscreen=''
           loading='lazy'
           referrerpolicy='no-referrer-when-downgrade'
-          class='w-[40vw] h-[40vw]'></iframe>
+          class='md:w-[40vw] md:h-[40vw]'></iframe>
       </div>
       <div class='flex flex-col gap-4'>
-        <h3 class='mb-4 text-2xl'>Accomodations:</h3>
+        <h3 class='md:mb-4 text-2xl'>Accomodations:</h3>
         <a href='https://www.levi.fi/en/stay' target='_blank'
           ><button>Official Levi Website</button></a
         >
