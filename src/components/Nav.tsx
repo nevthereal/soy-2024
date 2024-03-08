@@ -27,7 +27,9 @@ export const Nav = () => {
         >
           <i className='fa-solid fa-bars'></i>
         </button>
-        <img src={logo.src} alt='logo' className='h-[8dvh] md:hidden' />
+        <a href='/'>
+          <img src={logo.src} alt='logo' className='h-[8dvh] md:hidden' />
+        </a>
       </div>
       {/* MOBILE NAV */}
       <section className='block md:hidden'>
