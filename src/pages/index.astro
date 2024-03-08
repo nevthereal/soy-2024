@@ -1,19 +1,18 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import herobg from "../assets/hero-bg.jpg";
 ---
 
 <BaseLayout title='Home'>
-  <section class='w-screen grid grid-cols-2 h-[40vw] p-8'>
-    <div class='flex hero text-white'>
-      <div class='my-auto ml-8'>
+  <section class='w-screen grid md:grid-cols-2 p-8 pt-0 md:pt-8'>
+    <div class='flex hero text-white md:h-[40vw] p-8 md:p-0'>
+      <div class='my-auto md:ml-8'>
         <h1 class='text-8xl font-bold'>SOY XXVI</h1>
         <h3 class='flex gap-3 items-center text-2xl mt-2'>
           <i class='fa-solid fa-location-dot'></i><span>Levi, Lapland</span>
         </h3>
       </div>
     </div>
-    <div class='mx-16 my-auto'>
+    <div class='md:mx-16 md:my-auto mt-16'>
       <h1 class='text-4xl mb-8'>Irgend en crap text</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam enim
