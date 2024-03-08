@@ -23,7 +23,7 @@ export const Nav = () => {
       <div className='flex justify-between p-4 items-center'>
         <button
           onClick={handleNav}
-          className='p-4 m-2 top-2 left-2 md:hidden text-xl'
+          className='p-0 bg-transparent top-2 left-2 md:hidden text-xl'
         >
           <i className='fa-solid fa-bars'></i>
         </button>
@@ -57,7 +57,7 @@ export const Nav = () => {
         <div
           onClick={handleNav}
           className={`fixed w-screen h-screen top-0 bg-black/50 z-20 ${
-            nav ? "opacity-100" : "opacity-0"
+            nav ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
         ></div>
       </section>
