@@ -14,7 +14,7 @@ export const Nav = () => {
         <a href='/' className='text-3xl'>
           <img src={logo.src} className='h-[8dvh]' />
         </a>
-        <div className='flex gap-8 font-black font-[sofia-pro] uppercase'>
+        <div className='flex gap-8 font-bold uppercase'>
           <a href='/scientific-program'>scientific program</a>
           <a href='/registration'>registration</a>
           <a href='/venue'>venue/travel</a>
@@ -41,9 +41,9 @@ export const Nav = () => {
           }
         >
           <a href='/'>
-            <h1 className='text-3xl mb-4'>SOY XXVI</h1>
+            <h1 className='text-4xl mb-4 font-black'>SOY XXVI</h1>
           </a>
-          <ul className='flex flex-col gap-4'>
+          <ul className='flex flex-col gap-4 font-medium'>
             <li>
               <a href='/scientific-program'>scientific program</a>
             </li>
