@@ -1,0 +1,21 @@
+---
+interface Props {
+  icon: string;
+  body: string;
+  title: string;
+}
+
+const { icon, body, title } = Astro.props;
+---
+
+<div class='flex justify-center items-center gap-8'>
+  <div
+    class='rounded-full p-4 bg-sky-300 text-white text-2xl w-[5dvh] h-[5dvh] flex justify-center items-center'
+  >
+    <i class={icon}></i>
+  </div>
+  <div>
+    <h1 class='text-2xl uppercase'>{title}</h1>
+    <p class='font-medium'>{body}</p>
+  </div>
+</div>

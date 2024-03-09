@@ -1,9 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import GridItem from "../components/GridItem.astro";
 ---
 
 <BaseLayout title='Home'>
-  <section class='w-screen grid md:grid-cols-2 p-8 pt-0 md:pt-8'>
+  <section class='w-screen grid md:grid-cols-2 p-8 pt-0 md:pt-8 pb-16'>
     <div class='flex hero text-white md:h-[30vw] p-8 md:p-0'>
       <div class='my-auto md:ml-8 select-none'>
         <h1 class='text-8xl font-bold'>SOY XXVI</h1>
@@ -28,6 +29,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         corporis consequatur possimus doloremque, dolores at iure.
       </p>
     </div>
+  </section>
+  <section class='mx-16 grid xl:grid-cols-3 gap-6 xl:gap-0 grid-flow-dense'>
+    <GridItem
+      icon='fa-solid fa-brain'
+      title='big brains'
+      body='mir sind eif so schlau'
+    />
+    <GridItem
+      icon='fa-solid fa-house'
+      title='comfy'
+      body='fühl dich wie dihei'
+    />
+    <GridItem
+      icon='fa-solid fa-cross'
+      title='ka'
+      body='was ich da ane söt schribe'
+    />
   </section>
 </BaseLayout>
 
