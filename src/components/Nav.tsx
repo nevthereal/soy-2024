@@ -17,6 +17,7 @@ export const Nav = () => {
         <div className='flex gap-8 font-bold uppercase'>
           <a href='/scientific-program'>scientific program</a>
           <a href='/registration'>registration</a>
+          <a href='/reviews'>Memories/Reviews</a>
           <a href='/venue'>venue/travel</a>
         </div>
       </nav>
@@ -49,6 +50,9 @@ export const Nav = () => {
             </li>
             <li>
               <a href='/registration'>registration</a>
+            </li>
+            <li>
+              <a href='/reviews'>Memories/Reviews</a>
             </li>
             <li>
               <a href='/venue'>venue/travel</a>
