@@ -2,29 +2,36 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title='Venue'>
-  <main class='mx-8 md:mx-16'>
-    <h1 class='text-3xl mb-8'>Venue/Travel</h1>
-    <div class='grid md:grid-cols-2 gap-8 md:gap-0'>
+<BaseLayout title="Venue">
+  <main class="mx-8 md:mx-16">
+    <div class="md:grid md:grid-cols-2 gap-8">
       <div>
-        <h3 class='mb-4 text-2xl'>Location: Levi, Lapland</h3>
+        <h1 class="text-3xl mb-8">Venue</h1>
+        <h3 class="mb-4 text-2xl">Location: Levi, Lapland</h3>
+        <p>
+          During the congress, participants can choose from a range of
+          accommodation options to suit different needs and budgets, all
+          conveniently located near the Levi Mountain Centre. The congress will
+          take place at the Levi Mountain Centre in Hotel Hullu Poro, which
+          offers quality accommodations and easy access to all events. A quota
+          of rooms has been reserved for participants, along with various
+          options including hotels and cabins, allowing attendees to select the
+          most suitable option for their stay.
+        </p>
         <iframe
-          src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d192749.46836926325!2d24.734543!3d67.8257582!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d3ada6e521338b%3A0x18e6b1a1ac82f952!2sLevi!5e0!3m2!1sen!2sch!4v1709881998192!5m2!1sen!2sch'
-          style='border:0;'
-          allowfullscreen=''
-          loading='lazy'
-          referrerpolicy='no-referrer-when-downgrade'
-          class='md:w-[40vw] md:h-[40vw]'></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1506.9934144192425!2d24.80723607790104!3d67.8081066559591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d24d5a87b3f0fd%3A0xd00dac320805b483!2sHullu%20Poro%20(Hotel%20Crazy%20Reindeer)!5e0!3m2!1sde!2sch!4v1727347059773!5m2!1sde!2sch"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full max-md:h-[300px] md:h-[500px]"></iframe>
       </div>
-      <div class='flex flex-col gap-4'>
-        <h3 class='md:mb-4 text-2xl'>Accomodations:</h3>
-        <a href='https://www.levi.fi/en/stay' target='_blank'
-          ><button>Official Levi Website</button></a
-        >
-        <a
-          href='https://www.booking.com/city/fi/levi.en-gb.html'
-          target='_blank'><button>Booking.com</button></a
-        >
+      <div class="max-md:mt-8">
+        <h1 class="text-3xl mb-8">Travel</h1>
+        <ol class="list-decimal list-inside">
+          <li>Flight to Kittilä</li>
+          <li>Bus/taxi to Levi (20min)</li>
+        </ol>
       </div>
     </div>
   </main>

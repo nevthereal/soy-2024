@@ -1,57 +1,61 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import GridItem from "../components/GridItem.astro";
+import { getImage } from "astro:assets";
+import Aurora from "../assets/aurora.png";
+
+const aurora = await getImage({ src: Aurora });
 ---
 
-<BaseLayout title='Home'>
-  <section class='w-screen grid md:grid-cols-2 p-8 pt-0 md:pt-8 pb-16'>
-    <div class='flex hero text-white md:h-[30vw] p-8 md:p-0'>
-      <div class='my-auto md:ml-8 select-none'>
-        <h1 class='text-8xl font-bold'>Event Name</h1>
-        <h3 class='flex gap-3 items-center text-2xl mt-2'>
-          <i class='fa-solid fa-location-dot'></i><span>Levi, Finland</span>
+<BaseLayout title="Home">
+  <section class="w-screen grid md:grid-cols-2 p-8 pt-0 md:pt-8 pb-16">
+    <div
+      class="flex hero bg-no-repeat bg-bottom bg-cover text-white md:h-[30vw] p-8 md:p-0"
+      style={`background-image: url(${aurora.src});`}
+    >
+      <div class="my-auto md:ml-8 select-none">
+        <h1 class="text-8xl font-bold">24th AOS</h1>
+        <h3 class="flex gap-3 items-center text-2xl mt-2">
+          <i class="fa-solid fa-location-dot"></i><span>Levi, Finland</span>
         </h3>
       </div>
     </div>
-    <div class='md:mx-16 md:my-auto mt-16'>
-      <h1 class='text-4xl mb-8'>Event Name</h1>
+    <div class="md:mx-16 md:my-auto mt-16">
+      <h1 class="text-4xl mb-8">24th Arctic Orthopedic Summit</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam expedita
-        amet, excepturi soluta quidem temporibus? Hic explicabo sunt voluptates.
-        Officiis!
+        The Finnish Orthopedic Association invites you to the 24th Arctic
+        Orthopedic Summit, a biannual event dedicated to advancing orthopedic
+        knowledge and practice. Held in Finnish Lapland, the summit gathers
+        experts, researchers, and practitioners worldwide to share insights,
+        innovations, and experiences in orthopedics.
       </p>
-      <button class='mt-4'>
-        <a href='/registration'>Register</a>
+      <button class="mt-4">
+        <a href="/registration">Register</a>
       </button>
     </div>
   </section>
-  <section class='mx-24 lg:grid flex flex-col lg:grid-cols-3 gap-6'>
-    <GridItem icon='fa-solid fa-brain' title='Title' body='Subtitle' />
-    <GridItem icon='fa-solid fa-house' title='Title' body='Subtitle' />
-    <GridItem icon='fa-solid fa-cross' title='Title' body='Subtitle' />
+  <section class="mx-24 lg:grid flex flex-col lg:grid-cols-3 gap-6 my-8">
+    <GridItem icon="fa-solid fa-brain" title="Title" body="Subtitle" />
+    <GridItem icon="fa-solid fa-house" title="Title" body="Subtitle" />
+    <GridItem icon="fa-solid fa-cross" title="Title" body="Subtitle" />
   </section>
-  <section class='grid xl:grid-cols-2 my-16'>
-    <h1 class='text-3xl m-auto'>History</h1>
-    <p class='m-auto p-6 prose'>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint
-      amet atque explicabo cum dolorum praesentium excepturi temporibus ea ipsa
-      vel voluptatum unde perspiciatis dicta voluptates iusto, dolores alias
-      expedita, aspernatur voluptate, delectus nostrum eius! Nisi, officiis
-      alias nulla ipsam quam maiores, voluptas earum hic libero impedit tempora
-      quidem eligendi.
+  <section class="grid xl:grid-cols-2 my-16">
+    <h1 class="text-3xl m-auto">History</h1>
+    <p class="m-auto p-6">
+      The Arctic Orthopedic Summit offers a top-tier scientific program with
+      keynote lectures, workshops, and panel discussions on orthopedic surgery,
+      trauma care, and sports medicine. Participants can engage with global
+      experts and gain practical skills. Beyond the sessions, attendees can
+      enjoy Arctic Circle activities like skiing, husky sledding, Northern
+      Lights viewing, and traditional Finnish saunas. The event culminates with
+      a casual Gala Dinner on March 19, 2024, at a secret location. Now in its
+      24th edition, the summit combines professional growth with cultural
+      experiences in Lapland for an unforgettable event.
     </p>
   </section>
-  <section class='text-center my-16'>
-    <i class='fa-solid fa-quote-left text-4xl text-gray-500'></i>
-    <p class='text-2xl'>Eat your veggies</p>
+  <section class="text-center my-16">
+    <i class="fa-solid fa-quote-left text-4xl text-gray-500"></i>
+    <p class="text-2xl">Eat your veggies</p>
     <p>- my mom</p>
   </section>
 </BaseLayout>
-
-<style>
-  .hero {
-    background-image: url("../assets/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-</style>
