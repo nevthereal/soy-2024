@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import GridItem from "../components/GridItem.astro";
 import { getImage } from "astro:assets";
 import Aurora from "../assets/aurora.png";
+import Review from "../components/Review.astro";
 
 const aurora = await getImage({ src: Aurora });
 ---
@@ -14,30 +14,41 @@ const aurora = await getImage({ src: Aurora });
       style={`background-image: url(${aurora.src});`}
     >
       <div class="my-auto md:ml-8 select-none">
-        <h1 class="text-8xl font-bold">24th AOS</h1>
+        <h1 class="text-6xl font-bold text-balance">
+          24th Arctic Orthopedic Summit
+        </h1>
         <h3 class="flex gap-3 items-center text-2xl mt-2">
-          <i class="fa-solid fa-location-dot"></i><span>Levi, Finland</span>
+          <i class="fa-solid fa-location-dot"></i><span
+            >Levi, Finland. 16. - 21.3.2025</span
+          >
         </h3>
       </div>
     </div>
     <div class="md:mx-16 md:my-auto mt-16">
-      <h1 class="text-4xl mb-8">24th Arctic Orthopedic Summit</h1>
       <p>
-        The Finnish Orthopedic Association invites you to the 24th Arctic
-        Orthopedic Summit, a biannual event dedicated to advancing orthopedic
-        knowledge and practice. Held in Finnish Lapland, the summit gathers
-        experts, researchers, and practitioners worldwide to share insights,
-        innovations, and experiences in orthopedics.
+        The <a
+          class="text-sky-400 underline"
+          href="https://www.soy.fi/koulutus/"
+          target="_blank">Finnish Orthopedic Association</a
+        > invites you to the 24th Arctic Orthopedic Summit, a biannual event dedicated
+        to advancing orthopedic knowledge and practice. Held in Finnish Lapland,
+        the summit gathers experts, researchers, and practitioners worldwide to share
+        insights, innovations, and experiences in orthopedics.
       </p>
       <button class="mt-4">
         <a href="/registration">Register</a>
       </button>
     </div>
   </section>
-  <section class="mx-24 lg:grid flex flex-col lg:grid-cols-3 gap-6 my-8">
-    <GridItem icon="fa-solid fa-brain" title="Title" body="Subtitle" />
-    <GridItem icon="fa-solid fa-house" title="Title" body="Subtitle" />
-    <GridItem icon="fa-solid fa-cross" title="Title" body="Subtitle" />
+  <section
+    class="lg:grid flex flex-col lg:grid-cols-3 gap-6 my-8 max-w-3xl mx-auto"
+  >
+    <Review author="Neville Brem" body="Very cool" />
+    <Review
+      author="John Smith"
+      body="Stunning event, learned many cool things!"
+    />
+    <Review author="Eljas" body="Great event, looking forward to next year!" />
   </section>
   <section class="grid xl:grid-cols-2 my-16">
     <h1 class="text-3xl m-auto">History</h1>
@@ -55,7 +66,10 @@ const aurora = await getImage({ src: Aurora });
   </section>
   <section class="text-center my-16">
     <i class="fa-solid fa-quote-left text-4xl text-gray-500"></i>
-    <p class="text-2xl">meaningful qoute</p>
+    <p class="text-2xl max-w-lg mx-auto text-balance">
+      Welcome to the AOS Congress in Levi. An unforgettable opportunity to learn
+      new things and experience the magic of Lapland
+    </p>
     <p>- by a meaningful person</p>
   </section>
 </BaseLayout>

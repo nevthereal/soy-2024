@@ -1,47 +1,13 @@
-# Astro Starter Kit: Minimal
+[ ] die Titelseite sollte ein offizielles Nordlichtfoto enthalten - Heidi sollte es zur Verfügung stellen
+[x] und das Foto sollte den vollen Namen und die Daten der Veranstaltung enthalten
+[x] Soy-Logo in größerer Größe - und Name in Englisch / Finnisch - Link zurück zur Soy.fi-Webseite zum Trainingsbereich Kalender, wo gezeigt wird, dass der Kurs kein dubioser Fake-Kongress ist
+[ ] mein Name könnte auf der Titelseite erscheinen - unter dem Einleitungstext nach dem Zitat „Ich heiße Sie zum Aos2025-Kongress in Levi willkommen. Eine unvergessliche Gelegenheit, Neues zu lernen und den Zauber Lapplands zu erleben“ ist zum Beispiel ein ausreichend kitschiger Text. Und auch wenn der Vorsitzende des Organisationskomitees ihm „Bedeutung“ beimisst.
+[ ] wissenschaftliche Programmseite, natürlich das Programm - Robu, aber auch Fotos von den Vorträgen.
+[ ] für die Geschichte könnte ich irgendwo das erste Jahr des Kurses ausgraben - Mikko /Heidi/
+[ ] Henkku - kann sich Jerker an etwas aus den alten Kursen erinnern?
 
-```sh
-npm create astro@latest -- --template minimal
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[ ] Anmeldelink und Preise - Timo
+[x] der Bereich „Erinnerungen“ könnte den Namen „soziale/außerschulische Aktivitäten“ tragen - dort findet man Bilder vom Skifahren, der Natur, dem Gala-Abend und Informationen über mögliche außerschulische Aktivitäten.
+[ ] Veranstaltungsort - Adresse/Bilder des Kongresshotels. „Qualität“ ist vielleicht ein zu großes Versprechen für den Standard des Hotels.
+[ ] Anreise/ Unterkunft - Flüge/ Bahn/ etc. Beispiele für alternative Hotel- und Landhausunterkünfte/Appartements.
+[ ] Kontaktdaten des Veranstalters - E-Mail - Timo @soy.fi Mail ist für ihn reserviert.
