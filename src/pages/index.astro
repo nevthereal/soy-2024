@@ -1,16 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getImage } from "astro:assets";
-import Aurora from "../assets/aurora.png";
+import { Image } from "astro:assets";
 import Review from "../components/Review.astro";
-
-const aurora = await getImage({ src: Aurora });
+import Banner from "../assets/banner.jpg";
 ---
 
 <BaseLayout title="Home">
   <section class="w-screen grid md:grid-cols-2 p-8 pt-0 md:pt-8 pb-16">
-    <div
-      class="flex hero bg-no-repeat bg-bottom bg-cover text-white md:h-[30vw] p-8 md:p-0"
+    <Image src={Banner} alt="">
+      <!-- <div
+      class="flex hero bg-no-repeat bg-bottom bg-cover text-white md:h-[30vw] w-1/2 p-8 md:p-0"
       style={`background-image: url(${aurora.src});`}
     >
       <div class="my-auto md:ml-8 select-none">
@@ -29,8 +28,8 @@ const aurora = await getImage({ src: Aurora });
             >
           </li>
         </ul>
-      </div>
-    </div>
+      </div> -->
+    </Image>
     <div class="md:mx-16 md:my-auto mt-16">
       <p>
         The <a
@@ -48,7 +47,7 @@ const aurora = await getImage({ src: Aurora });
     </div>
   </section>
   <section
-    class="lg:grid flex flex-col lg:grid-cols-3 gap-6 my-8 max-w-3xl mx-auto"
+    class="lg:grid flex flex-col lg:grid-cols-3 gap-6 my-8 max-w-3xl md:mx-auto mx-8"
   >
     <Review author="Neville Brem" body="Very cool" />
     <Review
@@ -73,7 +72,7 @@ const aurora = await getImage({ src: Aurora });
   </section>
   <section class="text-center my-16">
     <i class="fa-solid fa-quote-left text-4xl text-gray-500"></i>
-    <p class="text-2xl max-w-lg mx-auto text-balance">
+    <p class="text-2xl max-w-lg text-balance mx-4 md:mx-auto">
       Welcome to the AOS Congress in Levi. An unforgettable opportunity to learn
       new things and experience the magic of Lapland
     </p>

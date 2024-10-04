@@ -20,11 +20,15 @@ export const Nav = () => {
       <nav className="py-4 md:flex items-center justify-center mx-auto gap-8 hidden">
         <a href="/" className="text-3xl flex gap-4 font-bold items-center">
           <img src={logo.src} className="h-[10dvh]" />
-          <p>SOY</p>
+          <p>Home</p>
         </a>
         <div className="contents font-bold uppercase">
-          {links.map((link) => {
-            return <a href={link.href}>{link.text}</a>;
+          {links.map((link, idx) => {
+            return (
+              <a key={idx} href={link.href}>
+                {link.text}
+              </a>
+            );
           })}
         </div>
       </nav>
@@ -53,10 +57,12 @@ export const Nav = () => {
             <h1 className="text-4xl mb-4 font-black">AOS 2025</h1>
           </a>
           <ul className="flex flex-col gap-4 font-medium">
-            {links.map((link) => {
+            {links.map((link, idx) => {
               return (
                 <li>
-                  <a href={link.href}>{link.text}</a>
+                  <a key={idx} href={link.href}>
+                    {link.text}
+                  </a>
                 </li>
               );
             })}
